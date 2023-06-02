@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\rishi\OneDrive\Desktop\DSA practice\.metadata\.plugins\org.eclipse.jdt.core
+40452348.index
+1488175552.index
+1865797976.index
+1670903162.index

@@ -1,0 +1,16 @@
+package com.in;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Multiple {
+	int mul(int arr[]) {
+		return 0;
+	}
+}
+
+public class Array_04 {
+
+	public static void main(String[] args) {
+	}
+}

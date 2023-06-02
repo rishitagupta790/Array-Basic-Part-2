@@ -1,0 +1,13 @@
+package com.in;
+
+public class Array_07 {
+
+	public static void main(String[] args) {
+		Monotonic mono = new Monotonic();
+		int[] nums1 = { 1, 2, 3, 4, 5 };
+		System.out.println(mono.isMonotonic(nums1));
+
+		int[] nums2 = { 5, 4, 3, 2, 1 };
+		System.out.println(mono.isMonotonic(nums2));
+	}
+}

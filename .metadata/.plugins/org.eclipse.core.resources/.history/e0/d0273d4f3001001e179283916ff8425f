@@ -1,0 +1,10 @@
+package com.in;
+
+import java.util.Arrays;
+
+public class Array_06 {
+
+	public static void main(String[] args) {
+
+	}
+}

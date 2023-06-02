@@ -1,0 +1,23 @@
+package com.in;
+
+import java.util.Arrays;
+
+class Multiple {
+	int mul(int arr[]) {
+		int mul = 1;
+		Arrays.sort(arr);
+		for (int i = arr.length - 1; i > 0; i--) {
+			mul = arr[i] * mul;
+		}
+		return mul;
+	}
+}
+
+public class Array_04 {
+
+	public static void main(String[] args) {
+		Multiple call = new Multiple();
+		int array[] = { 1, 2, 3 };
+		call.mul(array);
+	}
+}

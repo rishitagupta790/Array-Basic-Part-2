@@ -1,0 +1,43 @@
+package com.in;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Sollution {
+	public int findLHS(int[] nums) {
+		// Count the frequency of each number in the array
+		Map<Integer, Integer> frequencyMap = new HashMap<>();
+		for (int num : nums) {
+			frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+		}
+
+		int longestSubsequence = 0;
+
+		// Iterate through the numbers in the map
+		for (int num : frequencyMap.keySet()) {
+			// Check if there exists a number in the map that has a difference of 1 with the
+			// current number
+			if (frequencyMap.containsKey(num + 1)) {
+				int currentSubsequence = frequencyMap.get(num) + frequencyMap.get(num + 1);
+				longestSubsequence = Math.max(longestSubsequence, currentSubsequence);
+			}
+		}
+
+		return longestSubsequence;
+	}
+}
+
+public class Array_02 {
+
+	public static void main(String[] args) {
+		Sollution solution = new Sollution();
+
+		int[] nums = { 1, 3, 2, 2, 5, 2, 3, 7 };
+		System.out.println(solution.findLHS(nums)); // Output: 5
+
+		int[] nums2 = { 1, 2, 3, 4 };
+		System.out.println(solution.findLHS(nums2)); // Output: 2
+
+	}
+
+}
